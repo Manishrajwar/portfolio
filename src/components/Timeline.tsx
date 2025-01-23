@@ -25,7 +25,7 @@ const timelineData = [
     tech: ['HTML','CSS','Vanilla JavaScript','React.js','Next.js','Node.js','Express.js','MongoDB','Github','PHP','Wordpress']
   },
   {
-    year: '2024',
+    year: '2025',
     title: 'React.js with Firebase Internship',
     description: 'Developed responsive web applications using React.js and Firebase for real-time database integration and user authentication.',
     certificate:"https://drive.google.com/file/d/13EszImtnalVSfn8SC0MOLaCHKSVHYzEl/view?usp=sharing",
