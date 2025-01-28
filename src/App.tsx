@@ -35,7 +35,8 @@ const projects = [
     description:
       "Developed an Employee and Project Management System to streamline clock-in/out, leave tracking, and task assignment. Implemented role-based access control and integrated calendar management for efficient project tracking.",
       technologies: ["Javascript", "React.js", "Node.js", "Express.js", "MongoDB","github","Socket.io"],
-    demoUrl: "https://emrsystem.netlify.app/",
+    // demoUrl: "https://emrsystem.netlify.app/",
+    demoUrl: "https://example.com",
     githubUrl: "https://github.com/Manishrajwar/dashFront",
   },
   {
