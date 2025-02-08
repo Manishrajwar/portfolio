@@ -7,8 +7,10 @@ COPY package*.json ./
 RUN npm install
 
 # Copy app source code
-COPY . .
+COPY . /app
 
-EXPOSE 8000
+# Expose port 3000 for dev server
+EXPOSE 3000
 
+# Run the development server
 CMD ["npm", "run", "dev"]
