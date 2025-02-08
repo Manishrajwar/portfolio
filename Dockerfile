@@ -6,21 +6,9 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy app source code and build it
-COPY . . 
-RUN npm run build
+# Copy app source code
+COPY . .
 
-# Use Nginx to serve the built app
-FROM nginx:alpine
-
-# Change Nginx port to 8000
-RUN sed -i 's/listen 80;/listen 8000;/' /etc/nginx/conf.d/default.conf
-
-# Copy built app to Nginx directory
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Expose port 8000
 EXPOSE 8000
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "run", "start"]
